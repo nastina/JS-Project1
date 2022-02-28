@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="todo.js"></script>
+        <title>TO DO</title>   
+    </head>
+    <div class="myDiv">
+    <body onload="loadList()">
+        <h1>TO DO</h1>
+        
+        <form name="input" action="#" onsubmit="return validateInput()">
+        <input type="text" name="task" placeholder="Tehtävä...">
+
+        <input type="submit" value="Lisää">
+ 
+        </form>
+        <span id="feedback"></span>
+        <ul id="list">
+
+        </ul>
+        <button type="button" onclick="clearList()">Tyhjennä lista</button>
+    </div>
+    </body>
+
+</html>
